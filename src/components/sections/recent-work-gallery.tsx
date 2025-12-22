@@ -1,5 +1,3 @@
-"use client";
-
 import React from 'react';
 import Image from 'next/image';
 
@@ -34,11 +32,6 @@ const RecentWorkGallery = () => {
 
         {/* Scrolling Gallery Container */}
         <div className="relative w-full">
-          {/* 
-            The 'moving-left' animation is handled via Tailwind and CSS.
-            In the original site, this is likely a CSS keyframe animation 
-            that shifts the container to the left.
-          */}
           <div className="flex animate-[infinite-scroll_40s_linear_infinite] hover:[animation-play-state:paused] whitespace-nowrap">
             {galleryItems.map((src, index) => (
               <div 
@@ -60,20 +53,6 @@ const RecentWorkGallery = () => {
           </div>
         </div>
       </div>
-
-      <style jsx global>{`
-        @keyframes infinite-scroll {
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(-50%);
-          }
-        }
-        .animate-infinite-scroll {
-          animation: infinite-scroll 40s linear infinite;
-        }
-      `}</style>
     </section>
   );
 };
