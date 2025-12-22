@@ -1,29 +1,35 @@
-import { Navbar } from "@/components/cloned/Navbar"
-import { Hero } from "@/components/cloned/Hero"
-import { CallToAction } from "@/components/cloned/CallToAction"
-import { Testimonials } from "@/components/cloned/Testimonials"
-import { Gallery } from "@/components/cloned/Gallery"
-import { News } from "@/components/cloned/News"
-import { FAQ } from "@/components/cloned/FAQ"
-import { Marquee } from "@/components/cloned/Marquee"
-import { Footer } from "@/components/cloned/Footer"
+import Navbar from "@/components/sections/navbar";
+import Hero from "@/components/sections/hero";
+import CtaImmediateHelp from "@/components/sections/cta-immediate-help";
+import Testimonials from "@/components/sections/testimonials";
+import RecentWorkGallery from "@/components/sections/recent-work-gallery";
+import NewsBlog from "@/components/sections/news-blog";
+import VideoDivider from "@/components/sections/video-divider";
+import FAQSection from "@/components/sections/faq";
+import StatsAndAbout from "@/components/sections/stats-and-about";
+import SocialAndContactForm from "@/components/sections/social-and-contact-form";
+import ContactsMap from "@/components/sections/contacts-map";
+import Footer from "@/components/sections/footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen font-serif">
+    <main className="min-h-screen">
       <Navbar />
       <Hero />
-      <div id="services">
-        <CallToAction />
-        <Gallery />
-      </div>
+      <CtaImmediateHelp />
       <Testimonials />
-      <News />
-      <FAQ />
-      <Marquee />
-      <div id="contact">
-        <Footer />
+      <div id="services">
+        <RecentWorkGallery />
+        <NewsBlog />
       </div>
+      <VideoDivider />
+      <FAQSection />
+      <StatsAndAbout />
+      <SocialAndContactForm />
+      <div id="contact">
+        <ContactsMap />
+      </div>
+      <Footer />
     </main>
-  )
+  );
 }
