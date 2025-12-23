@@ -24,6 +24,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   experimental: {
+    /*
     turbo: {
       rules: {
         "*.{jsx,tsx}": {
@@ -31,6 +32,7 @@ const nextConfig: NextConfig = {
         }
       }
     }
+    */
   }
 };
 
