@@ -20,7 +20,14 @@ const Navbar = () => {
     e.preventDefault();
     const element = document.getElementById("contact-form");
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const offset = 100;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
       setIsMenuOpen(false);
     }
   };
