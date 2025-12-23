@@ -13,6 +13,15 @@ const Navbar = () => {
       setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
+    const handleScrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
+      e.preventDefault();
+      const element = document.getElementById("contact-form");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        setIsMenuOpen(false);
+      }
+    };
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
