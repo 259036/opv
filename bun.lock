@@ -68,8 +68,8 @@
         "next": "15.1.0",
         "next-themes": "^0.4.6",
         "qss": "^3.0.0",
-        "react": "19.0.0",
-        "react-dom": "19.0.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
         "react-dropzone": "^14.3.8",
         "react-fast-marquee": "^1.6.5",
         "react-hook-form": "^7.60.0",
@@ -1656,11 +1656,11 @@
 
     "atmn/chalk": ["chalk@5.6.2", "", {}, ""],
 
-    "atmn/zod": ["zod@4.2.1", "", {}, ""],
+    "atmn/zod": ["zod@4.2.1", "", {}, "sha512-0wZ1IRqGGhMP76gLqz8EyfBXKk0J2qo2+H3fi4mcUP/KtTocoX08nmIAHl1Z2kJIZbZee8KOpBCSNPRgauucjw=="],
 
-    "autumn-js/zod": ["zod@4.2.1", "", {}, ""],
+    "autumn-js/zod": ["zod@4.2.1", "", {}, "sha512-0wZ1IRqGGhMP76gLqz8EyfBXKk0J2qo2+H3fi4mcUP/KtTocoX08nmIAHl1Z2kJIZbZee8KOpBCSNPRgauucjw=="],
 
-    "better-auth/zod": ["zod@4.2.1", "", {}, ""],
+    "better-auth/zod": ["zod@4.2.1", "", {}, "sha512-0wZ1IRqGGhMP76gLqz8EyfBXKk0J2qo2+H3fi4mcUP/KtTocoX08nmIAHl1Z2kJIZbZee8KOpBCSNPRgauucjw=="],
 
     "better-call/rou3": ["rou3@0.7.12", "", {}, "sha512-iFE4hLDuloSWcD7mjdCDhx2bKcIsYbtOTpfH5MHHLSKMOUyjqQXTeZVa289uuwEGEKFoE/BAPbhaU4B774nceg=="],
 
