@@ -99,14 +99,15 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
-              <li className="mt-4">
-                <a
-                  href="#"
-                  className="block w-full bg-[#eed36d] text-black font-serif text-[22px] font-bold py-4 rounded-full text-center shadow-lg"
-                >
-                  Get Quote
-                </a>
-              </li>
+                <li className="mt-4">
+                  <a
+                    href="#contact-form"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block w-full bg-[#eed36d] text-black font-serif text-[22px] font-bold py-4 rounded-full text-center shadow-lg"
+                  >
+                    Get Quote
+                  </a>
+                </li>
             </ul>
           </div>
         )}
