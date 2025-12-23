@@ -21,7 +21,8 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   experimental: {
-  }
+  },
+  allowedDevOrigins: ['3000-e451ee1d-8e67-4439-9856-59537732b38d.proxy.daytona.works'],
 };
 
 
