@@ -64,15 +64,15 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Desktop CTA Button */}
-          <div className="hidden lg:block pr-2">
-            <a
-              href="#"
-              className="bg-[#eed36d] hover:bg-[#eec643] text-black font-serif text-[19.2px] font-semibold px-8 py-3 rounded-full transition-transform active:scale-95"
-            >
-              Get Quote
-            </a>
-          </div>
+            {/* Desktop CTA Button */}
+            <div className="hidden lg:block pr-2">
+              <a
+                href="#contact-form"
+                className="bg-[#eed36d] hover:bg-[#eec643] text-black font-serif text-[19.2px] font-semibold px-8 py-3 rounded-full transition-transform active:scale-95"
+              >
+                Get Quote
+              </a>
+            </div>
 
           {/* Mobile Menu Toggler */}
           <button
