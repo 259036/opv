@@ -16,21 +16,21 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleScrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const element = document.getElementById("contact-form");
-    if (element) {
-      const offset = 100;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-      setIsMenuOpen(false);
-    }
-  };
+    const handleScrollToContact = (e: React.MouseEvent<HTMLAnchorElement>) => {
+      e.preventDefault();
+      const element = document.getElementById("contact-form");
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        setIsMenuOpen(false);
+      } else {
+        // Fallback to searching for the contact section by ID or generic contact
+        const fallback = document.getElementById("contact");
+        if (fallback) {
+          fallback.scrollIntoView({ behavior: "smooth" });
+          setIsMenuOpen(false);
+        }
+      }
+    };
 
   const navLinks = [
     { name: "Home", href: "#" },
