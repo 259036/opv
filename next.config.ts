@@ -21,7 +21,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   experimental: {
-  },
+  }
 };
 
 
