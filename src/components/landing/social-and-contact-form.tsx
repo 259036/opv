@@ -31,7 +31,7 @@ const SocialAndContactForm: React.FC = () => {
       </section>
 
       {/* Get In Touch Section */}
-      <section className="py-[100px] md:py-[60px] bg-[#e8ecf1] px-4">
+      <section id="contact-form" className="py-[100px] md:py-[60px] bg-[#e8ecf1] px-4">
         <div className="max-w-[1320px] mx-auto">
           <h2 className="text-[3rem] md:text-[2.25rem] font-bold font-display text-black mb-12 text-center">
             Get In Touch
