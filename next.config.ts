@@ -24,15 +24,6 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   experimental: {
-    /*
-    turbo: {
-      rules: {
-        "*.{jsx,tsx}": {
-          loaders: [LOADER]
-        }
-      }
-    }
-    */
   }
 };
 
